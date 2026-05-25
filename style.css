@@ -134,3 +134,20 @@
   max-width: 500px;
   margin-top: 250px;
 }
+
+.band {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  border-top: 5px solid black;
+}
+
+.band-vid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
