@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@600;700&family=Poppins:wght@700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -16,29 +18,29 @@
   z-index: 1000; 
 
   /*got this glass blury backround preset for my nav bar from chatGPT*/
-  background-color: rgba(255, 255, 255, 0.348); 
+  background-color: rgba(157, 157, 157, 0); 
   
   /* This creates the actual blur effect */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px); /* For Safari compatibility */
-  
-  /* Optional: Adds a subtle, glowing edge to the glass */
-  border: 1px solid rgb(0, 0, 0); 
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .logo {
   font-size: 25px;
-  font-weight: 900;
-  color: #000000; 
+  color: #ff7caa;
   text-align: center;
   margin-left: 75px;
-  text-shadow: 0px 0px 5px #EEB8C4;
+  text-shadow: 0px 0px 10px black;
+  letter-spacing: 1px;
+  -webkit-text-stroke: 0.5px #000000;
+  font-weight: 900;
 }
 
 .logo span {
   display: block;
   line-height: 1;
-  text-shadow: 0px 0px 3px #EEB8C4;
+  text-shadow: 0px 0px 8px rgba(214, 69, 119, 0.4);
 }
 
 .nav-links {
@@ -46,14 +48,62 @@
   list-style: none;
   gap: 10px;
   font-weight: 700;
+  text-shadow: 0px 0px 10px black;
 }
 
 .nav-links a {
-  color: #292929;
+  color: #ff7caa;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 23px;
   margin-right: 125px;
-  font-weight: 700;
+  transition: all 0.3s ease;
+  font-family: 'Fredoka', sans-serif;
+  -webkit-text-stroke: 0.8px #000000;
+}
+
+.nav-links a:hover {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.5px;
+  color: #ff7caa;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+}
+
+@keyframes heroTitleLoad {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+}
+
+.hero-title {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 160px;
+  font-weight: 800;
+  color: #D64577;
+  text-align: right;
+  line-height: 0.9;
+  text-shadow: 0px 0px 15px rgba(214, 69, 119, 0.5);
+  -webkit-text-stroke: 1px #000000;
+  letter-spacing: -2px;
+  z-index: 10;
+  animation: heroTitleLoad 2s ease-out forwards;
+  opacity: 0;
+}
+
+.hero-title span {
+  display: block;
 }
 
 .hero-vid {
@@ -65,4 +115,22 @@
   object-fit: cover;
   z-index: -1;
 }
-/*
+
+.quote {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: #000000a2;
+  text-align: right;
+  line-height: 0.9;
+  letter-spacing: -2px;
+  z-index: 10;
+  animation: heroTitleLoad 6s ease-out forwards;
+  opacity: 3;
+  max-width: 500px;
+  margin-top: 250px;
+}
