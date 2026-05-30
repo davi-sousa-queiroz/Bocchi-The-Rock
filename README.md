@@ -1,4 +1,4 @@
-# 🎸 Bocchi The Rock Website
+# 🎸 Bocchi The Rock Website (May 24th - 25th 2026)
 
 An aesthetic Bocchi The Rock inspired website built with HTML and CSS Grid.
 
