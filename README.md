@@ -73,4 +73,4 @@ Hopefully by the time you read this, you’re way better than the version of you
 
 ### 🚀 Live Demo
 
-(Add GitHub Pages link here)
+https://davi-sousa-queiroz.github.io/bocchi-the-rock-fan-page/
