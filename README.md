@@ -57,7 +57,9 @@ This project was built to:
 
 ## 📸 Preview
 
-(Add screenshots here later)
+![Hero Screenshot](static/hero.png)
+
+![Hero Screenshot](static/band.png)
 
 ⸻
 
